@@ -1,0 +1,75 @@
+.dark {
+  /* background-color: #151d34; */
+  /* background-color: #2d2c50; */
+  background-color: #000000;
+}
+
+* {
+  overflow: hidden;
+}
+
+.blurred-background {
+  backdrop-filter: blur(10px); /* ปรับค่าตามความเบลอที่คุณต้องการ */
+  -webkit-backdrop-filter: blur(10px); /* สำหรับเบราว์เซอร์บางตัว */
+}
+
+.btn {
+  background-color: #c82626;
+  /* border: 3px solid rgb(0, 0, 0); */
+  border-radius: 10px;
+  /* box-shadow: 0px 9px 0px #000000; */
+  color: #fff5c4;
+  margin-top: 20px;
+  margin-bottom: 14%;
+  padding: 12px;
+  width: 25%;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* .nav-link:hover {
+  text-decoration: underline;
+  transition: .6s;
+} */
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ed2929;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4444;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #f2b5bd;
+  border-radius: 6px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #f5c3ca;
+}
+

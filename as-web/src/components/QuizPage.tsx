@@ -1,6 +1,7 @@
 import data from "../data/QuestionsData";
 import { Radio, RadioChangeEvent } from "antd";
 import "./style.css";
+import "./test.css";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -87,29 +88,31 @@ function QuizPage() {
                         value={answer[currentQuestion] || ""}
                       >
                         <Radio
-                          className="dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
+                          className="radio-button dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
                           style={{ fontFamily: "Mitr" }}
                           value="A"
                         >
                           A. {data[currentQuestion].A}
                         </Radio>
                         <Radio
-                          className="dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
+                          className="radio-button dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
                           style={{ fontFamily: "Mitr" }}
                           value="B"
                         >
                           B. {data[currentQuestion].B}
                         </Radio>
                         <Radio
-                          className="dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
+                          className="radio-button dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
                           style={{ fontFamily: "Mitr" }}
                           value="C"
                         >
                           C. {data[currentQuestion].C}
                         </Radio>
                         <Radio
-                          className="dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
-                          style={{ fontFamily: "Mitr" }}
+                          className="radio-button dark:text-[#f2b5bd] mb-2 font-medium text-base text-[#ed2929] hover:text-[#373b74] dark:hover:text-[#fff2b3] duration-700"
+                          style={{
+                            fontFamily: "Mitr",
+                          }}
                           value="D"
                         >
                           D. {data[currentQuestion].D}

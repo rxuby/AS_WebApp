@@ -36,6 +36,7 @@
 
 .nav-link.active {
   text-decoration: underline;
+  transition: 0.5s;
 }
 
 ::-webkit-scrollbar {
@@ -72,3 +73,59 @@
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #f5c3ca;
 }
+
+.radio-button .ant-radio-checked .ant-radio-inner {
+  background-color: #373b74;
+  border: #373b74;
+}
+
+.radio-button .ant-radio-checked .ant-radio-inner::after {
+  background-color: #373b74;
+  border: #373b74;
+}
+
+.radio-button .ant-radio .ant-wave-target {
+  border: #373b74;
+}
+
+.dark .radio-button .ant-radio-checked .ant-radio-inner {
+  background-color: #fff2b3;
+  border: #fff2b3;
+}
+
+.dark .radio-button .ant-radio-checked .ant-radio-inner::after {
+  background-color: #fff2b3;
+  border: #fff2b3;
+}
+
+.dark .radio-button .ant-radio .ant-wave-target {
+  border: #fff2b3;
+}
+
+
+
+
+/* .custom-radio-background
+  .ant-radio-wrapper
+  .ant-radio-checked
+  .ant-radio-inner {
+  background-color: red !important;
+}*/
+
+/* .test .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  background-color: #000000;
+} */
+
+/* .ant-radio-wrapper .ant-radio-input:focus + .ant-radio-inner,
+.ant-radio-wrapper:hover .ant-radio-inner,
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #374151;
+  background-color: #374151;
+} */
+
+/* .dark .ant-radio-wrapper .dark .ant-radio-input:focus + .dark .ant-radio-inner,
+.dark .ant-radio-wrapper:hover .dark .ant-radio-inner,
+.dark .ant-radio-wrapper .dark .ant-radio-checked .dark .ant-radio-inner {
+  border-color: #fff2b3;
+  background-color: #fff2b3;
+} */

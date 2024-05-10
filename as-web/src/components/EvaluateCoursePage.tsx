@@ -84,13 +84,13 @@ function EvaluateCoursePage() {
                 React Typscript
               </span>
               <span className="text-sm font-medium text-[#ed2929] dark:text-[#f2b5bd]">
-                5/10
+                10/10
               </span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
               <div
                 className="bg-[#ed2929] h-4 dark:bg-[#f2b5bd] rounded-full"
-                style={{ width: "50%" }}
+                style={{ width: "100%" }}
               ></div>
             </div>
           </div>

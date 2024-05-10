@@ -1,0 +1,8 @@
+.test .ant-radio-checked .ant-radio-inner {
+  background-color: #000000;
+}
+
+.dark .test .ant-radio-checked .ant-radio-inner {
+    background-color: #ff0000;
+  }
+  

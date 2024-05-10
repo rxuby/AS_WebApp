@@ -122,7 +122,7 @@ function Navigation() {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="ml-[450px] text-3xl"
+              className="ml-[550px] text-3xl"
             >
               <motion.div whileTap={{ scale: 0.7 }}>
                 {theme === "light" ? (

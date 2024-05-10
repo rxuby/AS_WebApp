@@ -16,8 +16,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             Radio: {
               dotSize: 4,
               radioSize: 10,
-              buttonSolidCheckedBg: "#FF0000",
-              buttonSolidCheckedHoverBg: "#FF0000",
+              buttonBg: '#FF0000',
+              buttonSolidCheckedHoverBg: '#FF0000',
             },
           },
         }}

@@ -46,7 +46,7 @@ function Navigation() {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="link"
+              className="link "
             >
               <Link
                 to="/"
@@ -73,7 +73,7 @@ function Navigation() {
             </motion.li>
             {theme === "light" ? (
               <motion.img
-                className="duration:300"
+                className="duration:300 drop-shadow-lg"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
@@ -82,7 +82,7 @@ function Navigation() {
               />
             ) : (
               <motion.img
-                className="duration:300"
+                className="duration:300 drop-shadow-lg"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
@@ -124,17 +124,19 @@ function Navigation() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="ml-[450px] text-3xl"
             >
-              {theme === "light" ? (
-                <MoonOutlined
-                  className="theme-icon"
-                  onClick={handleThemeSwitch}
-                />
-              ) : (
-                <SunOutlined
-                  className="theme-icon"
-                  onClick={handleThemeSwitch}
-                />
-              )}
+              <motion.div whileTap={{ scale: 0.7 }}>
+                {theme === "light" ? (
+                  <MoonOutlined
+                    className="theme-icon"
+                    onClick={handleThemeSwitch}
+                  />
+                ) : (
+                  <SunOutlined
+                    className="theme-icon"
+                    onClick={handleThemeSwitch}
+                  />
+                )}
+              </motion.div>
             </motion.div>
           </ul>
         </nav>

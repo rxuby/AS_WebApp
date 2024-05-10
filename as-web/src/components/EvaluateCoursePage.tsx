@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { motion } from "framer-motion";
 
 function EvaluateCoursePage() {
   return (
@@ -8,10 +9,20 @@ function EvaluateCoursePage() {
       style={{ fontFamily: "Mitr" }}
     >
       <div className="bg-[#ffe667] dark:bg-[#5b769b] rounded-[30px] w-[100%] mx-52 py-20 px-44 mt-12 h-[80%]">
-        <h1 className="text-2xl text-[#ed2929] dark:text-[#f2b5bd]">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl text-[#ed2929] dark:text-[#f2b5bd]"
+        >
           ประเมินคอร์สเรียน
-        </h1>
-        <div className="p-4">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="p-4"
+        >
           {/* Course 1 */}
           <div className="mb-4">
             <div className="flex justify-between">
@@ -33,7 +44,7 @@ function EvaluateCoursePage() {
           {/* Course 2 */}
           <div className="mb-4">
             <div className="flex justify-between">
-              <span className="text-base font-medium text-[#ed2929] dark:text-[#f2b5bd]">
+              <span className=" text-base font-medium text-[#ed2929] dark:text-[#f2b5bd]">
                 Basic Javascript
               </span>
               <span className="text-sm font-medium text-[#ed2929] dark:text-[#f2b5bd]">
@@ -101,7 +112,7 @@ function EvaluateCoursePage() {
               ></div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

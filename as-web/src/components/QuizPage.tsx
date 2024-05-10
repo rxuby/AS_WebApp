@@ -4,7 +4,7 @@ import "./style.css";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { IoReload } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 import {
   nextQuestion,
@@ -15,7 +15,6 @@ import {
   submit,
 } from "@store/slice/questionSlice";
 import { ReloadOutlined } from "@ant-design/icons";
-// import { FaArrowRight } from "react-icons/fa6";
 
 function QuizPage() {
   console.log(data);
@@ -56,7 +55,12 @@ function QuizPage() {
       >
         <div className=" bg-[#ffe667] dark:bg-[#5b769b]  rounded-[30px] w-[100%] mx-52 py-36 mt-12  h-[80%] ">
           {!startAttempt ? (
-            <div className="text-center">
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
               <div className="text-4xl font-medium mt-14 text-[#ed2929] dark:text-[#e2929c]">
                 แบบทดสอบก่อนเรียน
               </div>
@@ -66,7 +70,7 @@ function QuizPage() {
               >
                 เริ่มทำแบบทดสอบ
               </button>
-            </div>
+            </motion.div>
           ) : (
             <div className=" ">
               {!isSubmit ? (

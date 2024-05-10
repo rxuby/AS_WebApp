@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import data from "@data/QuestionsData";
-import { stat } from "fs";
+
 
 export type questionSlice = {
     startAttempt: boolean;
